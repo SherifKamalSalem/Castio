@@ -14,6 +14,7 @@
 		85C7DDA62258E58200140FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C7DDA42258E58200140FF6 /* LaunchScreen.storyboard */; };
 		85C7DDB12258E58200140FF6 /* CastioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDB02258E58200140FF6 /* CastioTests.swift */; };
 		85C7DDBC2258E58200140FF6 /* CastioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDBB2258E58200140FF6 /* CastioUITests.swift */; };
+		85C7DDCA2258E5C100140FF6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		85C7DDB72258E58200140FF6 /* CastioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C7DDBB2258E58200140FF6 /* CastioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastioUITests.swift; sourceTree = "<group>"; };
 		85C7DDBD2258E58200140FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				85C7DDA22258E58200140FF6 /* Assets.xcassets */,
 				85C7DDA42258E58200140FF6 /* LaunchScreen.storyboard */,
 				85C7DDA72258E58200140FF6 /* Info.plist */,
+				85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */,
 			);
 			path = Castio;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				85C7DD9E2258E58100140FF6 /* ViewController.swift in Sources */,
 				85C7DD9C2258E58100140FF6 /* AppDelegate.swift in Sources */,
+				85C7DDCA2258E5C100140FF6 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

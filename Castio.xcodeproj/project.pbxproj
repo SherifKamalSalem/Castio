@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85C7DD9C2258E58100140FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DD9B2258E58100140FF6 /* AppDelegate.swift */; };
+		85C7DD9E2258E58100140FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DD9D2258E58100140FF6 /* ViewController.swift */; };
+		85C7DDA12258E58100140FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C7DD9F2258E58100140FF6 /* Main.storyboard */; };
+		85C7DDA32258E58200140FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C7DDA22258E58200140FF6 /* Assets.xcassets */; };
+		85C7DDA62258E58200140FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C7DDA42258E58200140FF6 /* LaunchScreen.storyboard */; };
+		85C7DDB12258E58200140FF6 /* CastioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDB02258E58200140FF6 /* CastioTests.swift */; };
+		85C7DDBC2258E58200140FF6 /* CastioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDBB2258E58200140FF6 /* CastioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85C7DDAD2258E58200140FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C7DD902258E58100140FF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C7DD972258E58100140FF6;
+			remoteInfo = Castio;
+		};
+		85C7DDB82258E58200140FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C7DD902258E58100140FF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C7DD972258E58100140FF6;
+			remoteInfo = Castio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85C7DD982258E58100140FF6 /* Castio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Castio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C7DD9B2258E58100140FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85C7DD9D2258E58100140FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85C7DDA02258E58100140FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85C7DDA22258E58200140FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85C7DDA52258E58200140FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85C7DDA72258E58200140FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C7DDAC2258E58200140FF6 /* CastioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C7DDB02258E58200140FF6 /* CastioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastioTests.swift; sourceTree = "<group>"; };
+		85C7DDB22258E58200140FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C7DDB72258E58200140FF6 /* CastioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C7DDBB2258E58200140FF6 /* CastioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastioUITests.swift; sourceTree = "<group>"; };
+		85C7DDBD2258E58200140FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C7DD952258E58100140FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C7DDA92258E58200140FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C7DDB42258E58200140FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85C7DD8F2258E58100140FF6 = {
+			isa = PBXGroup;
+			children = (
+				85C7DD9A2258E58100140FF6 /* Castio */,
+				85C7DDAF2258E58200140FF6 /* CastioTests */,
+				85C7DDBA2258E58200140FF6 /* CastioUITests */,
+				85C7DD992258E58100140FF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85C7DD992258E58100140FF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85C7DD982258E58100140FF6 /* Castio.app */,
+				85C7DDAC2258E58200140FF6 /* CastioTests.xctest */,
+				85C7DDB72258E58200140FF6 /* CastioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C7DD9A2258E58100140FF6 /* Castio */ = {
+			isa = PBXGroup;
+			children = (
+				85C7DD9B2258E58100140FF6 /* AppDelegate.swift */,
+				85C7DD9D2258E58100140FF6 /* ViewController.swift */,
+				85C7DD9F2258E58100140FF6 /* Main.storyboard */,
+				85C7DDA22258E58200140FF6 /* Assets.xcassets */,
+				85C7DDA42258E58200140FF6 /* LaunchScreen.storyboard */,
+				85C7DDA72258E58200140FF6 /* Info.plist */,
+			);
+			path = Castio;
+			sourceTree = "<group>";
+		};
+		85C7DDAF2258E58200140FF6 /* CastioTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C7DDB02258E58200140FF6 /* CastioTests.swift */,
+				85C7DDB22258E58200140FF6 /* Info.plist */,
+			);
+			path = CastioTests;
+			sourceTree = "<group>";
+		};
+		85C7DDBA2258E58200140FF6 /* CastioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85C7DDBB2258E58200140FF6 /* CastioUITests.swift */,
+				85C7DDBD2258E58200140FF6 /* Info.plist */,
+			);
+			path = CastioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85C7DD972258E58100140FF6 /* Castio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C7DDC02258E58200140FF6 /* Build configuration list for PBXNativeTarget "Castio" */;
+			buildPhases = (
+				85C7DD942258E58100140FF6 /* Sources */,
+				85C7DD952258E58100140FF6 /* Frameworks */,
+				85C7DD962258E58100140FF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Castio;
+			productName = Castio;
+			productReference = 85C7DD982258E58100140FF6 /* Castio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85C7DDAB2258E58200140FF6 /* CastioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C7DDC32258E58200140FF6 /* Build configuration list for PBXNativeTarget "CastioTests" */;
+			buildPhases = (
+				85C7DDA82258E58200140FF6 /* Sources */,
+				85C7DDA92258E58200140FF6 /* Frameworks */,
+				85C7DDAA2258E58200140FF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C7DDAE2258E58200140FF6 /* PBXTargetDependency */,
+			);
+			name = CastioTests;
+			productName = CastioTests;
+			productReference = 85C7DDAC2258E58200140FF6 /* CastioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85C7DDB62258E58200140FF6 /* CastioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C7DDC62258E58200140FF6 /* Build configuration list for PBXNativeTarget "CastioUITests" */;
+			buildPhases = (
+				85C7DDB32258E58200140FF6 /* Sources */,
+				85C7DDB42258E58200140FF6 /* Frameworks */,
+				85C7DDB52258E58200140FF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C7DDB92258E58200140FF6 /* PBXTargetDependency */,
+			);
+			name = CastioUITests;
+			productName = CastioUITests;
+			productReference = 85C7DDB72258E58200140FF6 /* CastioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85C7DD902258E58100140FF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Xpress Integration";
+				TargetAttributes = {
+					85C7DD972258E58100140FF6 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					85C7DDAB2258E58200140FF6 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 85C7DD972258E58100140FF6;
+					};
+					85C7DDB62258E58200140FF6 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 85C7DD972258E58100140FF6;
+					};
+				};
+			};
+			buildConfigurationList = 85C7DD932258E58100140FF6 /* Build configuration list for PBXProject "Castio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85C7DD8F2258E58100140FF6;
+			productRefGroup = 85C7DD992258E58100140FF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C7DD972258E58100140FF6 /* Castio */,
+				85C7DDAB2258E58200140FF6 /* CastioTests */,
+				85C7DDB62258E58200140FF6 /* CastioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C7DD962258E58100140FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C7DDA62258E58200140FF6 /* LaunchScreen.storyboard in Resources */,
+				85C7DDA32258E58200140FF6 /* Assets.xcassets in Resources */,
+				85C7DDA12258E58100140FF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C7DDAA2258E58200140FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C7DDB52258E58200140FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85C7DD942258E58100140FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C7DD9E2258E58100140FF6 /* ViewController.swift in Sources */,
+				85C7DD9C2258E58100140FF6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C7DDA82258E58200140FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C7DDB12258E58200140FF6 /* CastioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C7DDB32258E58200140FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C7DDBC2258E58200140FF6 /* CastioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C7DDAE2258E58200140FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C7DD972258E58100140FF6 /* Castio */;
+			targetProxy = 85C7DDAD2258E58200140FF6 /* PBXContainerItemProxy */;
+		};
+		85C7DDB92258E58200140FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C7DD972258E58100140FF6 /* Castio */;
+			targetProxy = 85C7DDB82258E58200140FF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85C7DD9F2258E58100140FF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C7DDA02258E58100140FF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85C7DDA42258E58200140FF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C7DDA52258E58200140FF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85C7DDBE2258E58200140FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85C7DDBF2258E58200140FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C7DDC12258E58200140FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETH2M29NBU;
+				INFOPLIST_FILE = Castio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XpressIntegration.Castio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85C7DDC22258E58200140FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETH2M29NBU;
+				INFOPLIST_FILE = Castio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XpressIntegration.Castio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85C7DDC42258E58200140FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETH2M29NBU;
+				INFOPLIST_FILE = CastioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XpressIntegration.CastioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Castio.app/Castio";
+			};
+			name = Debug;
+		};
+		85C7DDC52258E58200140FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETH2M29NBU;
+				INFOPLIST_FILE = CastioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XpressIntegration.CastioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Castio.app/Castio";
+			};
+			name = Release;
+		};
+		85C7DDC72258E58200140FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETH2M29NBU;
+				INFOPLIST_FILE = CastioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XpressIntegration.CastioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Castio;
+			};
+			name = Debug;
+		};
+		85C7DDC82258E58200140FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETH2M29NBU;
+				INFOPLIST_FILE = CastioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XpressIntegration.CastioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Castio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85C7DD932258E58100140FF6 /* Build configuration list for PBXProject "Castio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C7DDBE2258E58200140FF6 /* Debug */,
+				85C7DDBF2258E58200140FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C7DDC02258E58200140FF6 /* Build configuration list for PBXNativeTarget "Castio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C7DDC12258E58200140FF6 /* Debug */,
+				85C7DDC22258E58200140FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C7DDC32258E58200140FF6 /* Build configuration list for PBXNativeTarget "CastioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C7DDC42258E58200140FF6 /* Debug */,
+				85C7DDC52258E58200140FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C7DDC62258E58200140FF6 /* Build configuration list for PBXNativeTarget "CastioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C7DDC72258E58200140FF6 /* Debug */,
+				85C7DDC82258E58200140FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85C7DD902258E58100140FF6 /* Project object */;
+}

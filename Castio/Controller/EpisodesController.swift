@@ -11,13 +11,11 @@ import FeedKit
 
 class EpisodesController: UITableViewController {
 
-    struct Episode {
-        let title: String
-    }
     var episodes = [Episode]()
     var podcast: Podcast? {
         didSet {
             navigationItem.title = podcast?.trackName
+            fetchEpisodes()
         }
     }
     
@@ -25,7 +23,9 @@ class EpisodesController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
     }
+    
 
     fileprivate func fetchEpisodes() {
         guard let feedUrl = podcast?.feedUrl else { return }
@@ -37,7 +37,7 @@ class EpisodesController: UITableViewController {
             case let .rss(feed):
                 var episodes = [Episode]()
                 feed.items?.forEach({ (feedItem) in
-                    var episode = Episode(title: feedItem.title ?? "")
+                    var episode = Episode(feedItem: feedItem)
                     episodes.append(episode)
                 })
                 self.episodes = episodes
@@ -51,24 +51,30 @@ class EpisodesController: UITableViewController {
             default:
                 print("Found a feed.....")
             }
-            
         }
-        
     }
     
     fileprivate func setupTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        let episodeNib = UINib(nibName: "EpisodeCell", bundle: nil)
+        tableView.register(episodeNib, forCellReuseIdentifier: cellId)
         tableView.tableFooterView = UIView()
     }
     
     // MARK: - Table view data source
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return episodes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? EpisodeCell else { return UITableViewCell() }
+        let episode = episodes[indexPath.row]
+        cell.episode = episode
+        return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

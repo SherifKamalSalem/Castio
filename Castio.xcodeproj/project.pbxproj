@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5F2BDB86A7ABC7086B2383 /* Pods_Castio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85C69E948D8EB11B9695EB9 /* Pods_Castio.framework */; };
+		85096D3E225B1E7800129A93 /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85096D3D225B1E7800129A93 /* PodcastCell.xib */; };
+		85096D40225B257500129A93 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85096D3F225B257500129A93 /* PodcastCell.swift */; };
+		850B51B7225932B200C484B7 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B51B6225932B200C484B7 /* SearchResult.swift */; };
+		8527DB9C225DB85A0086548A /* EpisodesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527DB9B225DB85A0086548A /* EpisodesController.swift */; };
+		8569A18622592175008B44C4 /* PodcastsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8569A18522592175008B44C4 /* PodcastsSearchController.swift */; };
+		8569A189225921F0008B44C4 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8569A188225921F0008B44C4 /* Podcast.swift */; };
+		8582469B225A55D900869C12 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582469A225A55D900869C12 /* APIService.swift */; };
 		85C7DD9C2258E58100140FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DD9B2258E58100140FF6 /* AppDelegate.swift */; };
 		85C7DD9E2258E58100140FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DD9D2258E58100140FF6 /* ViewController.swift */; };
 		85C7DDA12258E58100140FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C7DD9F2258E58100140FF6 /* Main.storyboard */; };
@@ -15,6 +23,8 @@
 		85C7DDB12258E58200140FF6 /* CastioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDB02258E58200140FF6 /* CastioTests.swift */; };
 		85C7DDBC2258E58200140FF6 /* CastioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDBB2258E58200140FF6 /* CastioUITests.swift */; };
 		85C7DDCA2258E5C100140FF6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */; };
+		996A1901DBF6202A2560191F /* Pods_CastioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6062655C19B9D2EFC78874F2 /* Pods_CastioUITests.framework */; };
+		AE10CBE2D0FF4D8CF846A153 /* Pods_CastioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE39582C2BA2E95C0685A9FA /* Pods_CastioTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		219ED26797201448A819E63B /* Pods-CastioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastioUITests.release.xcconfig"; path = "Target Support Files/Pods-CastioUITests/Pods-CastioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		427F77B51AAAFF1C5710F0EA /* Pods-CastioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastioUITests.debug.xcconfig"; path = "Target Support Files/Pods-CastioUITests/Pods-CastioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6062655C19B9D2EFC78874F2 /* Pods_CastioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CastioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762E08F0A48E011C2FD34E19 /* Pods-CastioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastioTests.debug.xcconfig"; path = "Target Support Files/Pods-CastioTests/Pods-CastioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F270652004D5444396C8A21 /* Pods-Castio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Castio.release.xcconfig"; path = "Target Support Files/Pods-Castio/Pods-Castio.release.xcconfig"; sourceTree = "<group>"; };
+		85096D3D225B1E7800129A93 /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
+		85096D3F225B257500129A93 /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
+		850B51B6225932B200C484B7 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		8527DB9B225DB85A0086548A /* EpisodesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesController.swift; sourceTree = "<group>"; };
+		8569A18522592175008B44C4 /* PodcastsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsSearchController.swift; sourceTree = "<group>"; };
+		8569A188225921F0008B44C4 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		8582469A225A55D900869C12 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		85C7DD982258E58100140FF6 /* Castio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Castio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C7DD9B2258E58100140FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85C7DD9D2258E58100140FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +71,10 @@
 		85C7DDBB2258E58200140FF6 /* CastioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastioUITests.swift; sourceTree = "<group>"; };
 		85C7DDBD2258E58200140FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9B2433AC28321410BEC57E64 /* Pods-CastioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastioTests.release.xcconfig"; path = "Target Support Files/Pods-CastioTests/Pods-CastioTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2D9CC51DC16F960249C601C /* Pods-Castio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Castio.debug.xcconfig"; path = "Target Support Files/Pods-Castio/Pods-Castio.debug.xcconfig"; sourceTree = "<group>"; };
+		E85C69E948D8EB11B9695EB9 /* Pods_Castio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Castio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE39582C2BA2E95C0685A9FA /* Pods_CastioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CastioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5F2BDB86A7ABC7086B2383 /* Pods_Castio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE10CBE2D0FF4D8CF846A153 /* Pods_CastioTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996A1901DBF6202A2560191F /* Pods_CastioUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85096D3C225B1E4400129A93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85096D3D225B1E7800129A93 /* PodcastCell.xib */,
+				85096D3F225B257500129A93 /* PodcastCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8569A1842259214B008B44C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85C7DD9D2258E58100140FF6 /* ViewController.swift */,
+				85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */,
+				8569A18522592175008B44C4 /* PodcastsSearchController.swift */,
+				8527DB9B225DB85A0086548A /* EpisodesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8569A187225921DA008B44C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8569A188225921F0008B44C4 /* Podcast.swift */,
+				850B51B6225932B200C484B7 /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85824699225A55C900869C12 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8582469A225A55D900869C12 /* APIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		85C7DD8F2258E58100140FF6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +149,8 @@
 				85C7DDAF2258E58200140FF6 /* CastioTests */,
 				85C7DDBA2258E58200140FF6 /* CastioUITests */,
 				85C7DD992258E58100140FF6 /* Products */,
+				B2E67649A3016053A60A7FDB /* Pods */,
+				99EB45608CF21132EBEAB571 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +167,15 @@
 		85C7DD9A2258E58100140FF6 /* Castio */ = {
 			isa = PBXGroup;
 			children = (
+				85824699225A55C900869C12 /* API */,
+				85096D3C225B1E4400129A93 /* View */,
+				8569A187225921DA008B44C4 /* Model */,
+				8569A1842259214B008B44C4 /* Controller */,
 				85C7DD9B2258E58100140FF6 /* AppDelegate.swift */,
-				85C7DD9D2258E58100140FF6 /* ViewController.swift */,
 				85C7DD9F2258E58100140FF6 /* Main.storyboard */,
 				85C7DDA22258E58200140FF6 /* Assets.xcassets */,
 				85C7DDA42258E58200140FF6 /* LaunchScreen.storyboard */,
 				85C7DDA72258E58200140FF6 /* Info.plist */,
-				85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */,
 			);
 			path = Castio;
 			sourceTree = "<group>";
@@ -128,6 +198,29 @@
 			path = CastioUITests;
 			sourceTree = "<group>";
 		};
+		99EB45608CF21132EBEAB571 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E85C69E948D8EB11B9695EB9 /* Pods_Castio.framework */,
+				EE39582C2BA2E95C0685A9FA /* Pods_CastioTests.framework */,
+				6062655C19B9D2EFC78874F2 /* Pods_CastioUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2E67649A3016053A60A7FDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2D9CC51DC16F960249C601C /* Pods-Castio.debug.xcconfig */,
+				7F270652004D5444396C8A21 /* Pods-Castio.release.xcconfig */,
+				762E08F0A48E011C2FD34E19 /* Pods-CastioTests.debug.xcconfig */,
+				9B2433AC28321410BEC57E64 /* Pods-CastioTests.release.xcconfig */,
+				427F77B51AAAFF1C5710F0EA /* Pods-CastioUITests.debug.xcconfig */,
+				219ED26797201448A819E63B /* Pods-CastioUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85C7DDC02258E58200140FF6 /* Build configuration list for PBXNativeTarget "Castio" */;
 			buildPhases = (
+				5F8828C693785E6E6EEB6E26 /* [CP] Check Pods Manifest.lock */,
 				85C7DD942258E58100140FF6 /* Sources */,
 				85C7DD952258E58100140FF6 /* Frameworks */,
 				85C7DD962258E58100140FF6 /* Resources */,
+				F7DE6ED3982F6CB37F4F3AEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85C7DDC32258E58200140FF6 /* Build configuration list for PBXNativeTarget "CastioTests" */;
 			buildPhases = (
+				3D67C114DD0EF8055C59E245 /* [CP] Check Pods Manifest.lock */,
 				85C7DDA82258E58200140FF6 /* Sources */,
 				85C7DDA92258E58200140FF6 /* Frameworks */,
 				85C7DDAA2258E58200140FF6 /* Resources */,
@@ -170,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85C7DDC62258E58200140FF6 /* Build configuration list for PBXNativeTarget "CastioUITests" */;
 			buildPhases = (
+				8F7B183A46E52A049C90CE38 /* [CP] Check Pods Manifest.lock */,
 				85C7DDB32258E58200140FF6 /* Sources */,
 				85C7DDB42258E58200140FF6 /* Frameworks */,
 				85C7DDB52258E58200140FF6 /* Resources */,
@@ -234,6 +331,7 @@
 			files = (
 				85C7DDA62258E58200140FF6 /* LaunchScreen.storyboard in Resources */,
 				85C7DDA32258E58200140FF6 /* Assets.xcassets in Resources */,
+				85096D3E225B1E7800129A93 /* PodcastCell.xib in Resources */,
 				85C7DDA12258E58100140FF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +352,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D67C114DD0EF8055C59E245 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CastioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F8828C693785E6E6EEB6E26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Castio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F7B183A46E52A049C90CE38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CastioUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7DE6ED3982F6CB37F4F3AEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Castio/Pods-Castio-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FeedKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Castio/Pods-Castio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85C7DD942258E58100140FF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8569A18622592175008B44C4 /* PodcastsSearchController.swift in Sources */,
+				8582469B225A55D900869C12 /* APIService.swift in Sources */,
+				85096D40225B257500129A93 /* PodcastCell.swift in Sources */,
 				85C7DD9E2258E58100140FF6 /* ViewController.swift in Sources */,
 				85C7DD9C2258E58100140FF6 /* AppDelegate.swift in Sources */,
 				85C7DDCA2258E5C100140FF6 /* MainTabBarController.swift in Sources */,
+				850B51B7225932B200C484B7 /* SearchResult.swift in Sources */,
+				8569A189225921F0008B44C4 /* Podcast.swift in Sources */,
+				8527DB9C225DB85A0086548A /* EpisodesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +633,7 @@
 		};
 		85C7DDC12258E58200140FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D9CC51DC16F960249C601C /* Pods-Castio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +652,7 @@
 		};
 		85C7DDC22258E58200140FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F270652004D5444396C8A21 /* Pods-Castio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +671,7 @@
 		};
 		85C7DDC42258E58200140FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762E08F0A48E011C2FD34E19 /* Pods-CastioTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +693,7 @@
 		};
 		85C7DDC52258E58200140FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2433AC28321410BEC57E64 /* Pods-CastioTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +715,7 @@
 		};
 		85C7DDC72258E58200140FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427F77B51AAAFF1C5710F0EA /* Pods-CastioUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +736,7 @@
 		};
 		85C7DDC82258E58200140FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 219ED26797201448A819E63B /* Pods-CastioUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

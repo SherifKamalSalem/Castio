@@ -26,6 +26,10 @@
 		85C7DDB12258E58200140FF6 /* CastioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDB02258E58200140FF6 /* CastioTests.swift */; };
 		85C7DDBC2258E58200140FF6 /* CastioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDBB2258E58200140FF6 /* CastioUITests.swift */; };
 		85C7DDCA2258E5C100140FF6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */; };
+		85E8CA03225FA07D00D413F4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E8CA02225FA07D00D413F4 /* String.swift */; };
+		85E8CA05225FA1AA00D413F4 /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E8CA04225FA1AA00D413F4 /* RSSFeed.swift */; };
+		85E8CA07225FAF1000D413F4 /* PlayerDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E8CA06225FAF1000D413F4 /* PlayerDetailsView.xib */; };
+		85E8CA09225FB69D00D413F4 /* PlayerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E8CA08225FB69D00D413F4 /* PlayerDetailsView.swift */; };
 		996A1901DBF6202A2560191F /* Pods_CastioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6062655C19B9D2EFC78874F2 /* Pods_CastioUITests.framework */; };
 		AE10CBE2D0FF4D8CF846A153 /* Pods_CastioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE39582C2BA2E95C0685A9FA /* Pods_CastioTests.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +81,10 @@
 		85C7DDBB2258E58200140FF6 /* CastioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastioUITests.swift; sourceTree = "<group>"; };
 		85C7DDBD2258E58200140FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		85E8CA02225FA07D00D413F4 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		85E8CA04225FA1AA00D413F4 /* RSSFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeed.swift; sourceTree = "<group>"; };
+		85E8CA06225FAF1000D413F4 /* PlayerDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerDetailsView.xib; sourceTree = "<group>"; };
+		85E8CA08225FB69D00D413F4 /* PlayerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsView.swift; sourceTree = "<group>"; };
 		9B2433AC28321410BEC57E64 /* Pods-CastioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastioTests.release.xcconfig"; path = "Target Support Files/Pods-CastioTests/Pods-CastioTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2D9CC51DC16F960249C601C /* Pods-Castio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Castio.debug.xcconfig"; path = "Target Support Files/Pods-Castio/Pods-Castio.debug.xcconfig"; sourceTree = "<group>"; };
 		E85C69E948D8EB11B9695EB9 /* Pods_Castio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Castio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +126,8 @@
 				85096D3F225B257500129A93 /* PodcastCell.swift */,
 				8527DB9F225DCD600086548A /* EpisodeCell.swift */,
 				8527DBA0225DCD600086548A /* EpisodeCell.xib */,
+				85E8CA06225FAF1000D413F4 /* PlayerDetailsView.xib */,
+				85E8CA08225FB69D00D413F4 /* PlayerDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +186,7 @@
 		85C7DD9A2258E58100140FF6 /* Castio */ = {
 			isa = PBXGroup;
 			children = (
+				85E8CA01225FA06C00D413F4 /* Extensions */,
 				85824699225A55C900869C12 /* API */,
 				85096D3C225B1E4400129A93 /* View */,
 				8569A187225921DA008B44C4 /* Model */,
@@ -205,6 +216,15 @@
 				85C7DDBD2258E58200140FF6 /* Info.plist */,
 			);
 			path = CastioUITests;
+			sourceTree = "<group>";
+		};
+		85E8CA01225FA06C00D413F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				85E8CA02225FA07D00D413F4 /* String.swift */,
+				85E8CA04225FA1AA00D413F4 /* RSSFeed.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		99EB45608CF21132EBEAB571 /* Frameworks */ = {
@@ -338,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E8CA07225FAF1000D413F4 /* PlayerDetailsView.xib in Resources */,
 				85C7DDA62258E58200140FF6 /* LaunchScreen.storyboard in Resources */,
 				85C7DDA32258E58200140FF6 /* Assets.xcassets in Resources */,
 				8527DBA2225DCD600086548A /* EpisodeCell.xib in Resources */,
@@ -462,10 +483,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E8CA05225FA1AA00D413F4 /* RSSFeed.swift in Sources */,
 				8569A18622592175008B44C4 /* PodcastsSearchController.swift in Sources */,
+				85E8CA03225FA07D00D413F4 /* String.swift in Sources */,
 				8582469B225A55D900869C12 /* APIService.swift in Sources */,
 				85096D40225B257500129A93 /* PodcastCell.swift in Sources */,
 				8527DBA1225DCD600086548A /* EpisodeCell.swift in Sources */,
+				85E8CA09225FB69D00D413F4 /* PlayerDetailsView.swift in Sources */,
 				8527DB9E225DC93A0086548A /* Episode.swift in Sources */,
 				85C7DD9E2258E58100140FF6 /* ViewController.swift in Sources */,
 				85C7DD9C2258E58100140FF6 /* AppDelegate.swift in Sources */,

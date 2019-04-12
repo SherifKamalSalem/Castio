@@ -13,7 +13,11 @@ import AVKit
 
 class PlayerDetailsView: UIView {
     
-    @IBOutlet weak var episodeImageView: UIImageView!
+    @IBOutlet weak var episodeImageView: UIImageView! {
+        didSet {
+            episodeImageView.transform = shrunkenTransform
+        }
+    }
     
     @IBOutlet weak var autherLbl: UILabel!
     @IBOutlet weak var episodeTitle: UILabel!
@@ -47,17 +51,42 @@ class PlayerDetailsView: UIView {
         player.play()
     }
     
+    fileprivate let shrunkenTransform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+    
     @objc func handlePlayPause() {
         if player.timeControlStatus == .paused {
             playBtn.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
             player.play()
+            enlargeEpisodeImage()
         } else {
             playBtn.setImage(#imageLiteral(resourceName: "play"), for: .normal)
             player.pause()
+            shrinkEpisodeImage()
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        let time = CMTimeMake(value: 1, timescale: 3)
+        let times = [NSValue(time: time)]
+        player.addBoundaryTimeObserver(forTimes: times, queue: .main) {
+            self.enlargeEpisodeImage()
         }
     }
     
     @IBAction func dismissBtnTapped(_ sender: Any) {
         self.removeFromSuperview()
+    }
+    
+    fileprivate func enlargeEpisodeImage() {
+        UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.episodeImageView.transform = .identity
+        })
+    }
+    
+    fileprivate func shrinkEpisodeImage() {
+        UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.episodeImageView.transform = self.shrunkenTransform
+        })
     }
 }

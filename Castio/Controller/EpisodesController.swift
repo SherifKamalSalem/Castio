@@ -20,12 +20,39 @@ class EpisodesController: UITableViewController {
     }
     
     fileprivate let cellId = "cellId"
+    let favoritedPodcastKey = "favoritedPodcastKey"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        setupNavigationBarButtons()
     }
     
+    fileprivate func setupNavigationBarButtons() {
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
+            UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedPodcasts))
+        ]
+    }
+    
+    @objc fileprivate func handleSaveFavorite() {
+        guard let podcast = podcast else { return }
+        do {
+           let data = try NSKeyedArchiver.archivedData(withRootObject: podcast, requiringSecureCoding: false)
+            UserDefaults.standard.set(data, forKey: favoritedPodcastKey)
+        } catch let error {
+            print("Failed to archive podcast: ", error)
+        }
+    }
+    
+    @objc fileprivate func handleFetchSavedPodcasts() {
+        guard let data = UserDefaults.standard.data(forKey: favoritedPodcastKey) else { return }
+        do {
+            let podcast = try NSKeyedUnarchiver.unarchivedObject(ofClass: Podcast.self, from: data)
+        } catch let error {
+            print("Failed to unarchive podcast: ", error)
+        }
+    }
 
     fileprivate func fetchEpisodes() {
         guard let feedUrl = podcast?.feedUrl else { return }
@@ -74,7 +101,7 @@ class EpisodesController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let mainTabBarController = UIApplication.shared.keyWindow?.rootViewController as? MainTabBarController
         let episode = episodes[indexPath.row]
-        mainTabBarController?.maximizePlayerDetails(episode: episode)
+        mainTabBarController?.maximizePlayerDetails(episode: episode, playlistEpisodes: self.episodes)
     }
     
 }

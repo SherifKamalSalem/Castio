@@ -10,9 +10,25 @@ import UIKit
 
 class FavoritesPodcastCell: UICollectionViewCell {
 
-    let autherImageView = UIImageView(image: #imageLiteral(resourceName: "appicon"))
+    let autherImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = #imageLiteral(resourceName: "appicon")
+        iv.clipsToBounds = true
+        return iv
+    }()
+    
     let nameLabel = UILabel()
     let artistNameLabel = UILabel()
+    
+    var podcast: Podcast! {
+        didSet {
+            nameLabel.text = podcast.trackName
+            artistNameLabel.text = podcast.artistName
+            guard let imageUrl = podcast.artworkUrl600 else { return }
+            let url = URL(string: imageUrl)
+            autherImageView.sd_setImage(with: url)
+        }
+    }
     
     fileprivate func stylizeUI() {
         nameLabel.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
@@ -21,11 +37,13 @@ class FavoritesPodcastCell: UICollectionViewCell {
     }
     
     fileprivate func setupViews() {
-        autherImageView.heightAnchor.constraint(equalTo: widthAnchor).isActive = true
+        
         let stackView = UIStackView(arrangedSubviews: [autherImageView, nameLabel, artistNameLabel])
         stackView.axis = .vertical
         addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        autherImageView.heightAnchor.constraint(equalTo: widthAnchor).isActive = true
         
         stackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
@@ -33,10 +51,14 @@ class FavoritesPodcastCell: UICollectionViewCell {
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        stylizeUI()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupViews()
+        stylizeUI()
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

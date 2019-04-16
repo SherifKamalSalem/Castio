@@ -19,11 +19,13 @@ class Podcast: NSObject, Decodable, NSCoding {
         aCoder.encode(trackName ?? "", forKey: Constants.trackNameKey)
         aCoder.encode(artistName ?? "", forKey: Constants.artistNameKey)
         aCoder.encode(artworkUrl600 ?? "", forKey: Constants.artworkUrl600Key)
+        aCoder.encode(feedUrl ?? "", forKey: Constants.feedUrl)
     }
     
     required init?(coder aDecoder: NSCoder) {
         self.trackName = aDecoder.decodeObject(forKey: Constants.trackNameKey) as? String
         self.artistName = aDecoder.decodeObject(forKey: Constants.artistNameKey) as? String
         self.artworkUrl600 = aDecoder.decodeObject(forKey: Constants.artworkUrl600Key) as? String
+        self.feedUrl = aDecoder.decodeObject(forKey: Constants.feedUrl) as? String
     }
 }

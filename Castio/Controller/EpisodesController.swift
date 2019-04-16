@@ -20,7 +20,6 @@ class EpisodesController: UITableViewController {
     }
     
     fileprivate let cellId = "cellId"
-    let favoritedPodcastKey = "favoritedPodcastKey"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,31 +28,40 @@ class EpisodesController: UITableViewController {
     }
     
     fileprivate func setupNavigationBarButtons() {
-        navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
-            UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedPodcasts))
-        ]
+        
+        let savedPodcasts = UserDefaults.standard.savedPodcasts()
+        let hasFavorited = savedPodcasts.firstIndex(where: { $0.trackName == self.podcast?.trackName && $0.artistName == self.podcast?.artistName }) != nil
+        
+        if hasFavorited {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "heart"), style: .plain, target: self, action: nil)
+        } else {
+            navigationItem.rightBarButtonItems = [
+                UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
+                
+            ]
+        }
     }
     
     @objc fileprivate func handleSaveFavorite() {
-        guard let podcast = podcast else { return }
+        guard let podcast = self.podcast else { return }
         do {
-           let data = try NSKeyedArchiver.archivedData(withRootObject: podcast, requiringSecureCoding: false)
-            UserDefaults.standard.set(data, forKey: favoritedPodcastKey)
+            var listOfPodcasts = UserDefaults.standard.savedPodcasts()
+            listOfPodcasts.append(podcast)
+            let data = try NSKeyedArchiver.archivedData(withRootObject: listOfPodcasts, requiringSecureCoding: false)
+            UserDefaults.standard.set(data, forKey: UserDefaults.favoritedPodcastKey)
         } catch let error {
             print("Failed to archive podcast: ", error)
         }
+        
+        showBadgeHighlight()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "heart"), style: .plain, target: nil, action: nil)
     }
     
-    @objc fileprivate func handleFetchSavedPodcasts() {
-        guard let data = UserDefaults.standard.data(forKey: favoritedPodcastKey) else { return }
-        do {
-            let podcast = try NSKeyedUnarchiver.unarchivedObject(ofClass: Podcast.self, from: data)
-        } catch let error {
-            print("Failed to unarchive podcast: ", error)
-        }
+    fileprivate func showBadgeHighlight() {
+        UIApplication.mainTabBarController()?.viewControllers?[1].tabBarItem.badgeValue = "New"
     }
-
+    
+    
     fileprivate func fetchEpisodes() {
         guard let feedUrl = podcast?.feedUrl else { return }
         APIService.shared.fetchEpisodes(feedUrl: feedUrl) { (episodes) in

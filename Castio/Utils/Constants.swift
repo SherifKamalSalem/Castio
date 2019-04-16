@@ -12,4 +12,5 @@ struct Constants {
     static let trackNameKey = "trackNameKey"
     static let artistNameKey = "artistNameKey"
     static let artworkUrl600Key = "artworkUrl600Key"
+    static let feedUrl = "feedUrl"
 }

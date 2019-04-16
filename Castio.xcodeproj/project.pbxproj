@@ -22,6 +22,7 @@
 		857F29C022628440004C4C59 /* FavoritesPodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F29BE22628440004C4C59 /* FavoritesPodcastCell.swift */; };
 		857F29C422629773004C4C59 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F29C322629773004C4C59 /* Constants.swift */; };
 		8582469B225A55D900869C12 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582469A225A55D900869C12 /* APIService.swift */; };
+		859B910622666E2E00E3D40A /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859B910522666E2E00E3D40A /* UIApplication.swift */; };
 		85C7DD9C2258E58100140FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DD9B2258E58100140FF6 /* AppDelegate.swift */; };
 		85C7DD9E2258E58100140FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DD9D2258E58100140FF6 /* ViewController.swift */; };
 		85C7DDA12258E58100140FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C7DD9F2258E58100140FF6 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		85C7DDB12258E58200140FF6 /* CastioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDB02258E58200140FF6 /* CastioTests.swift */; };
 		85C7DDBC2258E58200140FF6 /* CastioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDBB2258E58200140FF6 /* CastioUITests.swift */; };
 		85C7DDCA2258E5C100140FF6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */; };
+		85DECB5E226509220023E871 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DECB5D226509220023E871 /* UserDefaults.swift */; };
 		85E8CA03225FA07D00D413F4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E8CA02225FA07D00D413F4 /* String.swift */; };
 		85E8CA05225FA1AA00D413F4 /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E8CA04225FA1AA00D413F4 /* RSSFeed.swift */; };
 		85E8CA07225FAF1000D413F4 /* PlayerDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E8CA06225FAF1000D413F4 /* PlayerDetailsView.xib */; };
@@ -75,6 +77,7 @@
 		857F29BE22628440004C4C59 /* FavoritesPodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPodcastCell.swift; sourceTree = "<group>"; };
 		857F29C322629773004C4C59 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8582469A225A55D900869C12 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		859B910522666E2E00E3D40A /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		85C7DD982258E58100140FF6 /* Castio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Castio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C7DD9B2258E58100140FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85C7DD9D2258E58100140FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 		85C7DDBB2258E58200140FF6 /* CastioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastioUITests.swift; sourceTree = "<group>"; };
 		85C7DDBD2258E58200140FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C7DDC92258E5C100140FF6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		85DECB5D226509220023E871 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		85E8CA02225FA07D00D413F4 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		85E8CA04225FA1AA00D413F4 /* RSSFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeed.swift; sourceTree = "<group>"; };
 		85E8CA06225FAF1000D413F4 /* PlayerDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerDetailsView.xib; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 				85E8CA02225FA07D00D413F4 /* String.swift */,
 				85E8CA04225FA1AA00D413F4 /* RSSFeed.swift */,
 				8543AB182260812A002B266D /* CMTime.swift */,
+				85DECB5D226509220023E871 /* UserDefaults.swift */,
+				859B910522666E2E00E3D40A /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -516,11 +522,13 @@
 				8527DBA1225DCD600086548A /* EpisodeCell.swift in Sources */,
 				85E8CA09225FB69D00D413F4 /* PlayerDetailsView.swift in Sources */,
 				8527DB9E225DC93A0086548A /* Episode.swift in Sources */,
+				859B910622666E2E00E3D40A /* UIApplication.swift in Sources */,
 				85C7DD9E2258E58100140FF6 /* ViewController.swift in Sources */,
 				85C7DD9C2258E58100140FF6 /* AppDelegate.swift in Sources */,
 				85C7DDCA2258E5C100140FF6 /* MainTabBarController.swift in Sources */,
 				857F29BD22627D1F004C4C59 /* FavoritesController.swift in Sources */,
 				850B51B7225932B200C484B7 /* SearchResult.swift in Sources */,
+				85DECB5E226509220023E871 /* UserDefaults.swift in Sources */,
 				8569A189225921F0008B44C4 /* Podcast.swift in Sources */,
 				8543AB192260812A002B266D /* CMTime.swift in Sources */,
 				857F29C022628440004C4C59 /* FavoritesPodcastCell.swift in Sources */,

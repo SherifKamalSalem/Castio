@@ -11,7 +11,7 @@ import FeedKit
 
 class EpisodesController: UITableViewController {
 
-    var episodes = [Episode]()
+    var episodes = UserDefaults.standard.downloadedEpisodes()
     var podcast: Podcast? {
         didSet {
             navigationItem.title = podcast?.trackName
@@ -80,6 +80,13 @@ class EpisodesController: UITableViewController {
     
     // MARK: - Table view data source
 
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let downloadAction = UITableViewRowAction(style: .normal, title: "Download") { (_, _) in
+            UserDefaults.standard.downloadEpisode(episode: self.episodes[indexPath.row])
+        }
+        return [downloadAction]
+    }
+    
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
         activityIndicatorView.color = .darkGray

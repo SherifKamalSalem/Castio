@@ -14,6 +14,24 @@ class APIService {
     static let shared = APIService()
     let baseiTunesSearchURL = "https://itunes.apple.com/search"
     
+    func downloadEpisode(episode: Episode) {
+        
+        let downloadRequest = DownloadRequest.suggestedDownloadDestination()
+//        let requestIntercepter = RequestInterceptor
+        
+        AF.download(episode.streamUrl, interceptor: nil, to: downloadRequest).response { (response) in
+            var downloadedEpisodes = UserDefaults.standard.downloadedEpisodes()
+            guard let index = downloadedEpisodes.firstIndex(where: { $0.title == episode.title && $0.auther == episode.auther }) else { return }
+            downloadedEpisodes[index].fileUrl = response.fileURL?.absoluteString
+            do {
+                let encodedEpisodesData = try JSONEncoder().encode(downloadedEpisodes)
+                UserDefaults.standard.set(encodedEpisodesData, forKey: UserDefaults.downloadEpisodeKey)
+            } catch let encodeError {
+                print("Failed to encode file ", encodeError)
+            }
+        }
+    }
+    
     func fetchEpisodes(feedUrl: String, completionHandler: @escaping([Episode]) -> ()) {
         guard let url = URL(string: feedUrl.toSecureHTTPS()) else { return }
         DispatchQueue.global(qos: .background).async {
